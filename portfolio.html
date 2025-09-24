@@ -19,24 +19,29 @@
                                     display: flex;
                                     border: 1px solid #000;
                                     width: 99%;
+                                    height: auto;
                                     position: fixed;
                                     right: 5px;
                                     left: 5px;
                                     top: 5px;
+                                    z-index: 1;
                             }
+            .flex_container *   {     
+                                    z-index: 1;
+                                }
 
             .flex_element   {       
                                     background-color: #99dfe8;
                                     border-radius: 20px;
                                     border: 1px solid #000; 
                                     padding: 5px; 
-                                    margin: 10px; 
-                                    width: 100px; 
-                                    height: 100px; 
-                                    flex-wrap: nowrap; 
-                                    text-align: center; 
-                                    display: flex; 
-                                    align-items: center; 
+                                    margin: 10px;
+                                    width: 100px;
+                                    height: 100px;
+                                    flex-wrap: nowrap;
+                                    text-align: center;
+                                    display: flex;
+                                    align-items: center;
                                     justify-content: center;
                             }
             
@@ -44,12 +49,27 @@
                                     background-color: #f6d660;
                                     font-size: 18px;
                                     font-weight: bold;
-                                }                
+                                }      
+            .descriptions   {
+                                    /* position: relative; */
+                                    /* top: 200px; */
+                                    /* width: 75%; */
+                                    margin: 200px 15% auto 10%;
+                            }   
+
+            .textlink   {
+                                    font-style: italic;
+                                }
+
+            .resources      {       
+                                    position: relative; left: 50px;
+                            }       
 
         </style>
 
     </head>
     <body>
+
         <div class="flex_container">
 
             <a href="https://milog.sgedu.site/about_me.html" target="_blank">
@@ -77,6 +97,47 @@
             </a>
 
         </div>
+        
+        <div class="descriptions">
+            <h2>Assignment 1:</h2>
+            <p>
+                Throughout assignment 1 I practiced HTML basics by creating a simple webpage describing myself, my favorite food, pet names, and my favorite books.
+            </p> 
+            <div class="resources">
+                <h3>Resources:</h3>
+                <ul>
+                    <li>
+                        The <a class="textlink" href="https://w3schools.com">w3 schools</a> website.
+                    </li>
+                    <li>
+                        Class notes
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Assignment 2:</h2>
+            <p>
+                Throughout assignment 2, I practiced CSS styling basics by adding styling elements to the basic html page I created for Assignment&nbsp;1. 
+            </p>
+            <div class="resources">
+                <h3>Resources:</h3>
+                <ul>
+                    <li>
+                        The <a class="textlink" href="https://w3schools.com">w3 schools</a> website.
+                    </li>
+                    <li>
+                        Class notes
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Project 1: Band Website</h2>
+            <p>In progress... report coming soon!</p>
+        </div>
+
+
+        
+        
         
     </body>
 </html>
