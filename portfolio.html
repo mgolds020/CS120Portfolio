@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CS120 portfolio — Milo Goldstein</title>
+        <style type="text/css">
+            /* NOTE: my css styling is inconsistent across html files, 
+             *       I am trying different styles to find what works best 
+             *       organizationally for me. 
+             */
+            html {background-color: #b0e0e6;}
+
+            a {text-decoration: none; color: #000}
+
+            a:visited {color: #000;}
+            
+            .flex_container {
+                                    background-color: #fefbea;
+                                    border-radius: 10px;
+                                    display: flex;
+                                    border: 1px solid #000;
+                                    width: 99%;
+                                    position: fixed;
+                                    right: 5px;
+                                    left: 5px;
+                                    top: 5px;
+                            }
+
+            .flex_element   {       
+                                    background-color: #99dfe8;
+                                    border-radius: 20px;
+                                    border: 1px solid #000; 
+                                    padding: 5px; 
+                                    margin: 10px; 
+                                    width: 100px; 
+                                    height: 100px; 
+                                    flex-wrap: nowrap; 
+                                    text-align: center; 
+                                    display: flex; 
+                                    align-items: center; 
+                                    justify-content: center;
+                            }
+            
+            .flex_element:hover {
+                                    background-color: #f6d660;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }                
+
+        </style>
+
+    </head>
+    <body>
+        <div class="flex_container">
+
+            <a href="https://milog.sgedu.site/about_me.html" target="_blank">
+                <div class="flex_element">
+                    <p>Assignment 1 cPanel</p>
+                </div>
+            </a>
+
+            <a href="https://mgolds020.github.io/CS120HTMLAssignment/about_me.html" target="_blank">
+                <div class="flex_element">
+                    <p>Assignment 1 GitHub</p>
+                </div>
+            </a>
+
+            <a href="https://mgolds020.github.io/CS120CSSAssignment/me_two.html" target="_blank">
+                <div class="flex_element">
+                    <p>Assignment 2 CSS</p>
+                </div>
+            </a>
+
+            <a href="project1Placeholder.html" target="_blank">
+                <div class="flex_element">
+                    <p>Project 1</p>
+                </div>
+            </a>
+
+        </div>
+        
+    </body>
+</html>
