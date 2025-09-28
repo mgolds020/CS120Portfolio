@@ -7,63 +7,70 @@
              *       I am trying different styles to find what works best 
              *       organizationally for me. 
              */
-            html {background-color: #b0e0e6;}
+            html {
+                background-color: #b0e0e6;
+            }
 
-            a {text-decoration: none; color: #000}
+            a {
+                text-decoration: none; 
+                color: #000
+            }
 
-            a:visited {color: #000;}
+            a:visited {
+                color: #000;
+            }
             
             .flex_container {
-                                    background-color: #fefbea;
-                                    border-radius: 10px;
-                                    display: flex;
-                                    border: 1px solid #000;
-                                    width: 99%;
-                                    height: auto;
-                                    position: fixed;
-                                    right: 5px;
-                                    left: 5px;
-                                    top: 5px;
-                                    z-index: 1;
-                            }
+                background-color: #fefbea;
+                border-radius: 10px;
+                display: flex;
+                border: 1px solid #000;
+                width: 99%;
+                height: auto;
+                position: fixed;
+                right: 5px;
+                left: 5px;
+                top: 5px;
+                z-index: 1;
+                box-shadow: 3px 3px 3px #888;
+            }
+
             .flex_container *   {     
-                                    z-index: 1;
-                                }
+                z-index: 1;
+            }
 
             .flex_element   {       
-                                    background-color: #99dfe8;
-                                    border-radius: 20px;
-                                    border: 1px solid #000; 
-                                    padding: 5px; 
-                                    margin: 10px;
-                                    width: 100px;
-                                    height: 100px;
-                                    flex-wrap: nowrap;
-                                    text-align: center;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                            }
+                background-color: #99dfe8;
+                border-radius: 20px;
+                border: 1px solid #000; 
+                padding: 5px; 
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+                flex-wrap: nowrap;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             
             .flex_element:hover {
-                                    background-color: #f6d660;
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                }      
+                background-color: #f6d660;
+                font-size: 18px;
+                font-weight: bold;
+            }      
+
             .descriptions   {
-                                    /* position: relative; */
-                                    /* top: 200px; */
-                                    /* width: 75%; */
-                                    margin: 200px 15% auto 10%;
-                            }   
+                margin: 200px 15% auto 10%;
+            }   
 
             .textlink   {
-                                    font-style: italic;
-                                }
+                font-style: italic;
+            }
 
             .resources      {       
-                                    position: relative; left: 50px;
-                            }       
+                position: relative; left: 50px;
+            }
 
         </style>
 
@@ -90,7 +97,7 @@
                 </div>
             </a>
 
-            <a href="project1Placeholder.html" target="_blank">
+            <a href="https://mgolds020.github.io/CS120Project1/homepage.html" target="_blank">
                 <div class="flex_element">
                     <p>Project 1</p>
                 </div>
@@ -132,12 +139,19 @@
             </div>
 
             <h2>Project 1: Band Website</h2>
-            <p>In progress... report coming soon!</p>
+            <p>For Project 1, I had the opportunity to create a website for a cover band. I chose to tailor the site to my hometown cover band, Project V! I learned a lot about z-indexes, the sticky position, flexboxes, box-shadows (which I LOVE), gradients, transitions, animations, the ::after pseudo-element, and utilizing external style sheets in order to minimize code redundancies. My biggest challenges in this assignment were the banner and navigation bar. Getting positioning correct took me many hours. I tried to use the ::after element to create the transparent bar that follows my nav bar on scroll, but I could not get the bar to go below the banner while keeping the text above the banner. I elected to create a new div that 'follows' my nav bar wherever it goes. The z-index worked on this div. I imagine it is because the ::after element inherits z-index properties from its parent that cannot change.</p>
+            <div class="resources">
+                <h3>Resources:</h3>
+                <ul>
+                    <li>
+                        The <a class="textlink" href="https://w3schools.com" target="_blank">w3 schools</a> website.
+                    </li>
+                    <li>
+                        Class notes
+                    </li>
+                </ul>
+            </div>
         </div>
-
-
-        
-        
         
     </body>
 </html>
